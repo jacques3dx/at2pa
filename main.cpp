@@ -53,7 +53,7 @@ int main(){
     int vectorSize;
     vector<int> *ptTenVector = &tenVector;
 
-    cout<<"digite alguns numeros:"<<endl;
+    cout<<"Digite numeros para seu vetor:"<<endl;
     do{
         cin>> num;        
         tenVector.push_back(num);
@@ -62,7 +62,7 @@ int main(){
         if(resposta == 's'){
             cout<<"Digite seu número:"<<endl;
         }else{
-            cout<<"Lista finalizada"<<endl;
+            cout<<"**Lista finalizada**"<<endl;
             vectorSize = tenVector.size();
         }
     }while(resposta =='s');
