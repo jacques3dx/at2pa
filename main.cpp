@@ -4,7 +4,7 @@
 
 using namespace std;
 using std::cin;
-
+///mostra o tamanho do vetor, os elemntos e o endereço
 void vectorData(int vsize, vector<int> vec, vector<int> *ptVec){
     cout<<"\nSeu vetor tem "<<vsize<<" números"<<endl;
     for(int i = 0; i < vec.size(); i++){
@@ -12,7 +12,7 @@ void vectorData(int vsize, vector<int> vec, vector<int> *ptVec){
     }
     cout<<"\nO endereço do vetor é "<<ptVec<<endl;
 }
-
+///mostra o max e endereço
 void getMaxNumber(vector<int> vec){
     int getIndex= 0;
     int maxNum = vec[0];
@@ -26,7 +26,7 @@ void getMaxNumber(vector<int> vec){
     }
     cout<<"o maior numero é "<<maxNum<<", Endereço: "<<&vec[getIndex]<<endl;
 }
-
+///mostra o minimo e endereço
 void getMinNumber(vector<int> vec){
     int getIndex = 0;
     int minNum = vec[0];
