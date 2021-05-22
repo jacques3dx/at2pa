@@ -13,7 +13,7 @@ void vectorData(int vsize, vector<int> vec, vector<int> *ptVec){
     cout<<"\nO endereço do vetor é "<<ptVec<<endl;
 }
 
-int getMaxNumber(vector<int> vec){
+void getMaxNumber(vector<int> vec){
     int getIndex= 0;
     int maxNum = vec[0];
     for(int i = 0; i < vec.size(); i++){
@@ -24,12 +24,10 @@ int getMaxNumber(vector<int> vec){
             continue;
         }
     }
-    
     cout<<"o maior numero é "<<maxNum<<", Endereço: "<<&vec[getIndex]<<endl;
-    return maxNum;
 }
 
-int getMinNumber(vector<int> vec){
+void getMinNumber(vector<int> vec){
     int getIndex = 0;
     int minNum = vec[0];
     for(int i =0; i < vec.size(); i++){
@@ -41,7 +39,6 @@ int getMinNumber(vector<int> vec){
         }
     }
     cout<<"o menor numero é "<<minNum<<", Endereço: "<<&vec[getIndex]<<endl;
-    return minNum;
 }
 
 int main(){
